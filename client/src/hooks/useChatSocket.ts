@@ -1,8 +1,5 @@
 import { useEffect, useRef } from 'react';
 import { io, type Socket } from 'socket.io-client';
-
-const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || 'http://localhost:3001';
-
 export function useChatSocket(accessToken: string | null) {
   const socketRef = useRef<Socket | null>(null);
   useEffect(() => {
@@ -15,7 +12,8 @@ export function useChatSocket(accessToken: string | null) {
     }
     
 
-    const socket = io(SOCKET_URL, {
+    const socket = io({
+      path: "/api/socket.io",
       auth: { token: accessToken },
       autoConnect: true,
       reconnection: true,

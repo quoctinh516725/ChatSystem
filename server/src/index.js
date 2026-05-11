@@ -306,6 +306,4 @@ io.on('connection', (socket) => {
   });
 });
 
-server.listen(PORT, () => {
-  console.log(`Socket server listening on http://localhost:${PORT}`);
-});
+server.listen(PORT);

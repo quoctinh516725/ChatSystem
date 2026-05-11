@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
+import WebSocket from 'ws';
 
 export function createServiceClient() {
   const url = process.env.SUPABASE_URL;
@@ -8,5 +9,6 @@ export function createServiceClient() {
   }
   return createClient(url, key, {
     auth: { persistSession: false, autoRefreshToken: false },
+    global: { WebSocket }
   });
 }
