@@ -313,7 +313,7 @@ function ChatApp({ session, user }: { session: Session; user: User }) {
           </div>
           <div className="toolbar">
             <button type="button" className="secondary" onClick={openDirectModal}>
-              Chat 1-haha
+              Chat 1-1
             </button>
             <button type="button" className="secondary" onClick={openGroupModal}>
               Nhóm
@@ -493,7 +493,7 @@ export default function App() {
         <>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', padding: '0 1rem' }}>
             <h1 style={{ margin: 0, fontSize: '1.5rem', background: 'var(--accent-gradient)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-              ChatSystem1234567
+              ChatSystem
             </h1>
             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
               <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
