@@ -313,7 +313,7 @@ function ChatApp({ session, user }: { session: Session; user: User }) {
           </div>
           <div className="toolbar">
             <button type="button" className="secondary" onClick={openDirectModal}>
-              Chat 1-1
+              Chat 1-haha
             </button>
             <button type="button" className="secondary" onClick={openGroupModal}>
               Nhóm
