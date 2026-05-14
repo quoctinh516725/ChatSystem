@@ -14,3 +14,13 @@ services:
       - NODE_ENV=production
     restart: unless-stopped
 
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+
+    volumes:
+      - /var/www/ChatSystem:/app/dist
+
+    container_name: chatsystem-client
+
